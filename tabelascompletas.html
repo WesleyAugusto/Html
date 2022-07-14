@@ -9,31 +9,42 @@
 </head>
 
 <body>
+   
+
     <table>
-<thead>
-    <tr>
-       <th rowspan="2"></th> 
-       <th colspan="2">curso 1</th>
-       <th colspan="2">curso 2</th>
-    </tr>
-    <tr>
-<th>turma 1</th>
-<th>turma 2</th>
-<th>turma 1</th>
-<th>turma 2</th>
+        <caption>alunos por polo por curso por turma </caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: blue;">
+            <col span="2" style="background-color: brown;">
 
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <th>polo sede</th>
-        <td>20</td>
-        <td>30</td>
-        <td>10</td>
-        <td>20</td>
+        </colgroup>
 
-    </tr>
-</tbody>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th scope = "colgroup" colspan="2">curso 1</th>
+                <th scope = "colgroup" colspan="2">curso 2</th>
+            </tr>
+            <tr>
+                <th scope="col">turma 1</th>
+                <th scope="col">turma 2</th>
+                <th scope="col">turma 1</th>
+                <th scope="col">turma 2</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">polo sede</th>
+                <td>20</td>
+                <td>30</td>
+                <td>10</td>
+                <td>20</td>
+
+            </tr>
+        </tbody>
 
     </table>
 
